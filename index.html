@@ -1,113 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        
-        #cx00{
-            
-            border: 3px solid blueviolet;
-            width: 100%;
-            height: 50px; 
-        }
-        
-        #cx01{
-            border: 3px solid blueviolet;
-            width: 100%;
-            height: 100px;
-        }
-
-        #cx02{
-            border:3px solid blueviolet;
-            width: 100%;
-            height: 700px;
-        }
-
-        #cx03{
-
-            border:3px solid blueviolet;
-            width: 100%;
-            height: 150px;
-            
-        }
-        #cx04{
-
-            border:3px solid blueviolet;
-            width: 100%;
-            height:20px;
-            
-
-}
-        p{
-            color: blueviolet;
-            display: flex;
-            justify-content: center;
-            text-align: justify;
-            font-weight: bold;
-            margin: 05px;
-
-        }
-        #Menu{
-            display: flex;
-            justify-content: center;
-            margin:0px;
-            color:blueviolet;
-        }
-    nav ul {
-    display: flex; /* Alinha itens na horizontal */
-    justify-content: center; /* Centraliza o menu (opcional) */
-    list-style: none; /* Remove bolinhas da lista */
-    padding: 0;
-}
-nav ul li {
-    margin: 0 15px; /* Espaçamento entre os itens */
-}
-
-nav a{
-        display: inline-block;
-        margin-left: 150px;
-        font-size: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: bold;
-        color: aquamarine;
-
-
-}
-
-
-    </style>
-    <title>Index</title>
+    <title>Cadastro Clientes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style = "background-color: black;">
-   
-   <div id="cx00">
-        <nav id = "Menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="artigos.html">Artigos</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-        </nav>
-       
-   </div>
-   
-   <br>
-    <div id = "cx01">
-    <center><h1 style = "color: blueviolet;">*****Kaisen Brasil*****</h1></center>
-    </div>
-    <br>
-    <div id = "cx02">
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <form action="/cadastrar" method="post">
+        <label for="CPF">CPF:</label>
+        <input type="text" name="CPF" placeholder="CPF" id="c_cpf" required>
+        
 
-    <img src="all.jpeg" style: width = "100%"; height = "700px";/>
-    
-     
-    </div>
-    <br>
-    <div id = "cx04">
-       <p>@CopyRight</p>
-    </div>
+        <label for="Primeiro Nome">Primeiro Nome:</label>
+        <input type="text" name="primeiro_nome"  placeholder="Primeiro Nome" c_primeiro_nome" required>
+        
+        <label for="Sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" placeholder="Sobrenome" id="c_sobrenome" required>
+        
+
+        <label for="Idade">Idade:</label>
+        <input type="number" name="idade" placeholder="Idade" step="1" id="c_idade" required>
+        <button type="submit">Cadastrar</button>
+
+    </form>
 </body>
 </html>
